@@ -1,0 +1,14 @@
+el tutor ingreso la linea siguiente en la consola:
+
+composer require "laravelcollective/html" "santigarcor/laratrust"
+
+ --- pero no funciono, ya que solo fuciona si el proyecto al que vas a migrar es la ultima version
+ en este caso la ultimaversion e 5.7 y yo estoy trabajando con la 5.6
+
+ ----la solucion fue instalar las dos dependencias de su forma tradicional.
+
+1. https://laravelcollective.com/docs/5.4/html
+    composer require "laravelcollective/html":"^5.4.0"
+
+2. https://laratrust.santigarcor.me/docs/5.0/installation.html
+ composer require "santigarcor/laratrust:5.0.*"
