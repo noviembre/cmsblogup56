@@ -15,7 +15,7 @@
                 <li>
                     <a href="{{ url('/home') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
                 </li>
-                <li><a href="{{ route('users.index') }}">Users</a></li>
+                <li><a href="{{ route('backend.users.index') }}">Users</a></li>
                 <li class="active">Add new</li>
             </ol>
         </section>
@@ -26,7 +26,7 @@
 
                 {!! Form::model($user, [
                     'method' => 'POST',
-                    'route'  => 'users.store',
+                    'route'  => 'backend.users.store',
                     'files'  => TRUE,
                     'id'     => 'user-form'
                 ]) !!}

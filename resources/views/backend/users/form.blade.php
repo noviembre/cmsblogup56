@@ -103,7 +103,7 @@
             <button type="submit" class="btn btn-primary">
                 {{ $user->exists ? 'Update' : 'Save' }}
             </button>
-            <a href="{{ route('users.index') }}" class="btn btn-default">Cancel</a>
+            <a href="{{ route('backend.users.index') }}" class="btn btn-default">Cancel</a>
         </div>
     </div>
     <!-- /.box -->

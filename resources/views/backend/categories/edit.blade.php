@@ -17,7 +17,7 @@
                         <i class="fa fa-dashboard"></i>
                         Dashboard</a>
                 </li>
-                <li><a href="{{ route('categories.index') }}">
+                <li><a href="{{ route('backend.categories.index') }}">
                         Categories</a>
                 </li>
                 <li class="active">Edit Category</li>
@@ -29,7 +29,7 @@
             <div class="row">
                 {!! Form::model($category, [
                     'method' => 'PUT',
-                    'route'  => ['categories.update', $category->id],
+                    'route'  => ['backend.categories.update', $category->id],
                     'id' => 'post-form'
                 ]) !!}
 

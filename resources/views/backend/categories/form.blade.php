@@ -28,7 +28,7 @@
             <button type="submit" class="btn btn-primary">
                 {{ $category->exists ? 'Update' : 'Save' }}
             </button>
-            <a href="{{ route('categories.index') }}" class="btn btn-default">
+            <a href="{{ route('backend.categories.index') }}" class="btn btn-default">
                 Cancel
             </a>
         </div>

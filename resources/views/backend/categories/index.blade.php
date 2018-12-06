@@ -15,7 +15,7 @@
                 <li>
                     <a href="{{ url('/home') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
                 </li>
-                <li><a href="{{ route('categories.index') }}">
+                <li><a href="{{ route('backend.categories.index') }}">
                         Categories
                     </a>
                 </li>
@@ -30,7 +30,7 @@
                     <div class="box">
                         <div class="box-header clearfix">
                             <div class="pull-left">
-                                <a href="{{ route('categories.create') }}" class="btn btn-success">
+                                <a href="{{ route('backend.categories.create') }}" class="btn btn-success">
                                     <i class="fa fa-plus"></i>
                                     Add New
                                 </a>

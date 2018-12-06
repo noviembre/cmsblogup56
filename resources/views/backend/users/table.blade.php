@@ -13,7 +13,7 @@
 
         <tr>
             <td>
-                <a href="{{ route('users.edit', $user->id) }}" class="btn btn-xs btn-default">
+                <a href="{{ route('backend.users.edit', $user->id) }}" class="btn btn-xs btn-default">
                     <i class="fa fa-edit"></i>
                 </a>
                 @if($user->id == config('cms.default_user_id') || $user->id == $currentUser->id)

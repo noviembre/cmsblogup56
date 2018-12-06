@@ -11,8 +11,8 @@
 
         <tr>
             <td>
-                {!! Form::open(['method' => 'DELETE', 'route' => ['categories.destroy', $category->id]]) !!}
-                <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-xs btn-default">
+                {!! Form::open(['method' => 'DELETE', 'route' => ['backend.categories.destroy', $category->id]]) !!}
+                <a href="{{ route('backend.categories.edit', $category->id) }}" class="btn btn-xs btn-default">
                     <i class="fa fa-edit"></i>
                 </a>
 

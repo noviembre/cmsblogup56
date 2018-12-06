@@ -15,7 +15,7 @@
                 <li>
                     <a href="{{ url('/home') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
                 </li>
-                <li><a href="{{ route('users.index') }}">Users</a></li>
+                <li><a href="{{ route('backend.users.index') }}">Users</a></li>
                 <li class="active">All users</li>
             </ol>
         </section>
@@ -27,7 +27,7 @@
                     <div class="box">
                         <div class="box-header clearfix">
                             <div class="pull-left">
-                                <a href="{{ route('users.create') }}" class="btn btn-success"><i class="fa fa-plus"></i> Add New</a>
+                                <a href="{{ route('backend.users.create') }}" class="btn btn-success"><i class="fa fa-plus"></i> Add New</a>
                             </div>
                             <div class="pull-right">
                             </div>
