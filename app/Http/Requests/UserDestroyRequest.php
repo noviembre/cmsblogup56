@@ -16,14 +16,14 @@ class UserDestroyRequest extends FormRequest
         #--- if user is NOT the default user or if the user is NOT the current user
         #--- return the below function forbiddenResponse()
         #--- this message only will show up if the current user delete button is not blocked
-        return !($this->route('users') == config('cms.default_user_id') ||
-            $this->route('users') == auth()->user()->id);
+        return !($this->route('user') == config('cms.default_user_id') ||
+            $this->route('user') == auth()->user()->id);
     }
 
-    public function forbiddenResponse()
-    {
-        return redirect()->back()->with('error-message', 'You cannot delete default user or delete yourself!');
-    }
+//    public function forbiddenResponse()
+//    {
+//        return redirect()->back()->with('error-message', 'You cannot delete default user or delete yourself!');
+//    }
 
 
     /**

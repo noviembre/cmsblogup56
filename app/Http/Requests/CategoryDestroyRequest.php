@@ -16,12 +16,10 @@ class CategoryDestroyRequest extends FormRequest
         #-- if the id that will be remove is equal to the protected Uncategorized id, this request will be reject
         return !($this->route('category') == config('cms.default_category_id'));
     }
-    public function forbiddenResponse()
-    {
-        #--- after the protected uncategorized is deleted(of course that wont happen because is protected) it will show a message
-        return redirect()->back()
-            ->with('error-message', 'You cannot delete default category!');
-    }
+
+    #--- after the protected uncategorized is deleted(of course that wont happen because is protected) it will show a message
+    # se puso en handler
+
 
 
     /**
